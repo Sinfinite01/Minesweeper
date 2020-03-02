@@ -167,7 +167,7 @@ public class MSButton
             clicked=true;
             firstClick=false;
         }
-        if(clicked==false&&mouseButton==RIGHT && gameState)
+        else if(clicked==false&&mouseButton==RIGHT && gameState)
         {
             flagged=!flagged;
             clicked=false;
