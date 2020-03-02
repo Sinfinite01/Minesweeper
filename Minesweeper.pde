@@ -157,7 +157,7 @@ public class MSButton
     public void mousePressed () 
     {
         //your code here
-        if(firstClick && gameState)
+        if(firstClick && gameState && mouseButton==LEFT)
         {
             if(mines.contains(this))
                 {
