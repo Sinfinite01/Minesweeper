@@ -84,6 +84,7 @@ public void displayLosingMessage()
             buttons[row][col].setLabel("OOF");
             if(mines.contains(buttons[row][col]))
             {
+                buttons[row][col].flagged=false;
                 buttons[row][col].clicked=true;
             }
         }
