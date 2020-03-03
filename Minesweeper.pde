@@ -157,17 +157,17 @@ public class MSButton
     public void mousePressed () 
     {
         //your code here
-        if(firstClick && gameState && mouseButton==LEFT)
+        if(firstClick && gameState)
         {
             if(mines.contains(this))
                 {
                     setMines();
                     mines.remove(buttons[myRow][myCol]);
                 }
-            clicked=true;
             firstClick=false;
+            mousePressed();
         }
-        else if(clicked==false&&mouseButton==RIGHT && gameState)
+        if(clicked==false && mouseButton==RIGHT && gameState)
         {
             flagged=!flagged;
             clicked=false;
